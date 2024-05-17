@@ -2,11 +2,11 @@
 #include "PLC.h"
 
 PLC::PLC() {
-  // Constructor can be empty
+  // empty
 }
 
 void PLC::init() {
-  // Initialize input pins
+  // Init i-pins
   pinMode(6, INPUT);
   pinMode(7, INPUT);
   pinMode(8, INPUT);
@@ -15,7 +15,7 @@ void PLC::init() {
   pinMode(11, INPUT);
   pinMode(12, INPUT);
 
-  // Initialize output pins
+  // Init o-pins
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
