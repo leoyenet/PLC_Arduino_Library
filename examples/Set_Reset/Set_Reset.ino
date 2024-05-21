@@ -11,9 +11,9 @@ void loop(){
   bool setTipka = plc.I3();
   bool resetTipka = plc.I4();
 
-  if (setTipka && !resetTipka){ // true ce je set tipka stisnjena ampak reset tipka ni
+  if (setTipka){ // true ce je set tipka stisnjena
     outputState = true;
-  } else if (!setTipka && resetTipka){ // false ce tipka set ni stisnjena reset tipka pa je
+  } else if (resetTipka){ // false ce reset tipka stisnjena
     outputState = false; 
   }
   
