@@ -61,19 +61,19 @@ bool PLC::I7() {
 }
 
 void PLC::Q0(bool value) {
-  digitalWrite(5, value ? HIGH : LOW);
+  digitalWrite(2, value ? HIGH : LOW);
 }
 
 void PLC::Q1(bool value) {
-  digitalWrite(4, value ? HIGH : LOW);
-}
-
-void PLC::Q2(bool value) {
   digitalWrite(3, value ? HIGH : LOW);
 }
 
+void PLC::Q2(bool value) {
+  digitalWrite(4, value ? HIGH : LOW);
+}
+
 void PLC::Q3(bool value) {
-  digitalWrite(2, value ? HIGH : LOW);
+  digitalWrite(5, value ? HIGH : LOW);
 }
 
 void PLC::LED(bool value) {
