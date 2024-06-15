@@ -5,8 +5,8 @@
 class PLC
 {
   public:
-    PLC(); // Constructor
-    void init(); // Initialization function to replace setup
+    PLC();
+    void init();
     bool I0();
     bool I1();
     bool I2();
