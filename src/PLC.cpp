@@ -2,7 +2,6 @@
 #include "PLC.h"
 
 PLC::PLC() {
-  // empty
 }
 
 void PLC::init() {
