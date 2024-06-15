@@ -52,12 +52,7 @@ bool PLC::I6() {
 }
 
 bool PLC::I7() {
-  if (analogRead(A0) > 2000) {
-    return true;
-  } else {
-    return false;
-  }
-}
+  return (analogRead(A0) > 2000);
 
 void PLC::Q0(bool value) {
   digitalWrite(2, value ? HIGH : LOW);
